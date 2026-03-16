@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>惨写録 - 注意事項</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+  <!-- 警告 -->
+  <div id="age-check-overlay">
+    <h1>あなたは18歳以上ですか？</h1>
+    <p>このサイトには暴力的・残酷な表現が含まれます。18歳未満の方はご退出ください。</p>
+    <p>閲覧により精神的・感情的な影響を受けたとしても、当サイト運営者は一切の責任を負いません。</p>
+    <p>閲覧はあくまで自己責任で行ってください。</p>
+    <p>不適切と感じる方は速やかにページを閉じてください。</p>
+    <button onclick="confirmAge()">はい（18歳以上）</button>
+  </div>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="nav">
+      <a href="index.html"><img src="logo.png" alt="惨写録ロゴ" class="logo"></a>
+    </div>
+    <nav>
+      <a href="index.html">注意書き</a>
+      <a href="list.html">事件一覧</a>
+      <a href="link.html">リンク</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>注意事項</h1>
+    <p>
+      このサイトはすべてフィクションです。<br>
+      暴力的な表現や残酷な描写があります。<br>
+      実在の人物・団体とは一切関係ありません。<br>
+      また、これらの行為を肯定・推奨するものではありません。<br>
+      閲覧により精神的・感情的な影響を受けたとしても、<br>
+      当サイト運営者は一切の責任を負いません。<br>
+      閲覧はあくまで自己責任で行ってください。<br>
+      不適切と感じる方は速やかにページを閉じてください。<br><br>
+      広告リンクはすべて自作・関係作品のみで構成されています。<br>
+      危険な外部サイトへの誘導は一切ありませんので、<br>
+      安心して閲覧いただけます。
+    </p>
+    <div class="button">
+      <a href="list.html">事件アーカイブを見る</a>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer>
+    &copy; 惨写録 ｜ 創作事件資料アーカイブ
+  </footer>
+  
+  <!-- スクリプト -->
+  <script>
+    function confirmAge() {
+      localStorage.setItem('ageConfirmed', 'true');
+      document.getElementById('age-check-overlay').classList.remove('active');
+    }
+
+    window.addEventListener('DOMContentLoaded', function () {
+      if (!localStorage.getItem('ageConfirmed')) {
+        document.getElementById('age-check-overlay').classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>事件一覧 - 惨写録</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+  <!-- 警告 -->
+  <div id="age-check-overlay">
+    <h1>あなたは18歳以上ですか？</h1>
+    <p>このサイトには暴力的・残酷な表現が含まれます。18歳未満の方はご退出ください。</p>
+    <p>閲覧により精神的・感情的な影響を受けたとしても、当サイト運営者は一切の責任を負いません。</p>
+    <p>閲覧はあくまで自己責任で行ってください。</p>
+    <p>不適切と感じる方は速やかにページを閉じてください。</p>
+    <button onclick="confirmAge()">はい（18歳以上）</button>
+  </div>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="nav">
+      <a href="index.html"><img src="logo.png" alt="惨写録ロゴ" class="logo"></a>
+    </div>
+    <nav>
+      <a href="index.html">注意書き</a>
+      <a href="list.html">事件一覧</a>
+      <a href="link.html">リンク</a>
+    </nav>
+  </header>
+
+  <div class="content-wrapper">
+
+  <!-- 左メニュー -->
+  <aside class="left-menu">
+    <h3 class="menu-heading">事件一覧</h3>
+    <nav class="index-menu">
+      <ul>
+        <li><a href="list.html#a">あ行</a></li>
+        <li><a href="list.html#ka">か行</a></li>
+        <li><a href="list.html#sa">さ行</a></li>
+        <li><a href="list.html#ta">た行</a></li>
+        <li><a href="list.html#na">な行</a></li>
+        <li><a href="list.html#ha">は行</a></li>
+        <li><a href="list.html#ma">ま行</a></li>
+        <li><a href="list.html#ya">や行</a></li>
+        <li><a href="list.html#ra">ら行</a></li>
+        <li><a href="list.html#wa">わ行</a></li>
+        <li><a href="list.html#en_a">英語 A〜I行</a></li>
+        <li><a href="list.html#en_j">英語 J〜R行</a></li>
+        <li><a href="list.html#en_s">英語 S〜Z行</a></li>
+        <li><a href="list.html#kigou">数字・記号行</a></li>        
+      </ul>
+    </nav>
+  </aside>
+
+    <!-- 事件一覧 -->
+    <main class="main">
+
+      <section id="a">
+        <h2 class="jiken-link">あ行</h2>
+        <ul class="event-list">
+        </ul>
+      </section>
+      
+      <section id="ka">
+        <h2>か行</h2>
+        <ul class="event-list">
+          <li><a href="case002.html">クマぬいぐるみ詰め殺人事件</a></li>
+        </ul>
+      </section>
+
+      <section id="sa">
+        <h2>さ行</h2>
+        <ul class="event-list">
+          <li><a href="case005.html">埼玉県川口市一家惨殺事件</a></li> 
+          <li><a href="case007.html">然別湖ヒグマ配信死亡事件</a></li> 
+
+          
+        </ul>
+      </section>
+      
+      <section id="ta">
+        <h2>た行</h2>
+        <ul class="event-list">
+          <li><a href="case001.html">田園調布冷蔵庫食人事件</a></li>
+        </ul>
+      </section>
+      
+      <section id="na">
+        <h2>な行</h2>
+        <ul class="event-list">
+          <li><a href="case005.html">ナイトハンターズ事件</a></li>
+          <li><a href="case008.html">妊婦親子卵スープ事件</a></li>
+        </ul>
+      </section>
+      
+      <section id="ha">
+        <h2>は行</h2>
+        <ul class="event-list">
+        </ul>
+      </section>
+      
+      <section id="ma">
+        <h2>ま行</h2>
+        <ul class="event-list"></ul>
+      </section>
+      
+      <section id="ya">
+        <h2>や行</h2>
+        <ul class="event-list">
+          <li><a href="case004.html">八坂生贄少女解体儀式事件</a></li>
+          <li><a href="case006.html">谷中中華食堂人肉混入事件</a></li>
+          
+        </ul>
+      </section>
+      
+      <section id="ra">
+        <h2>ら行</h2>
+        <ul class="event-list"></ul>
+      </section>
+      
+      <section id="wa">
+        <h2>わ行</h2>
+        <ul class="event-list"></ul>
+      </section>
+      
+      <section id="en_a">
+        <h2>英語 A〜I行</h2>
+        <ul class="event-list"></ul>
+      </section>
+      
+      <section id="en_j">
+        <h2>英語 J〜R行</h2>
+        <ul class="event-list"></ul>
+      </section>
+      
+      <section id="en_s">
+        <h2>英語 S〜Z行</h2>
+        <ul class="event-list"></ul>
+      </section>
+      
+      <section id="kigou">
+        <h2>数字・記号行</h2>
+        <ul class="event-list"></ul>
+      </section>
+    </main>
+
+    <!-- 右メニュー -->
+    <aside class="right-menu">
+      <h3 class="menu-heading">関連リンク</h3>
+
+      <div class="pixiv-link">
+        <a href="https://www.pixiv.net/users/31232951">
+          <img src="img/icon.png" alt="pixiv" class="pixiv-icon">
+          <span class="pixiv-text">pixivプロフィール</span>
+        </a>
+      </div>  
+      
+    </aside>
+  </div>
+
+  <!-- フッター -->
+  <footer>
+    &copy; 惨写録 ｜ 創作事件資料アーカイブ
+  </footer>
+
+  <!-- スクリプト -->
+  <button id="backToTop" title="トップに戻る">▲</button>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    function confirmAge() {
+      localStorage.setItem('ageConfirmed', 'true');
+      document.getElementById('age-check-overlay').classList.remove('active');
+    }
+
+    window.addEventListener('DOMContentLoaded', function () {
+      if (!localStorage.getItem('ageConfirmed')) {
+        document.getElementById('age-check-overlay').classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

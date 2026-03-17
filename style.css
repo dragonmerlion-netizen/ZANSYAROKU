@@ -18,12 +18,11 @@
   display: none;
 }
  
-/* #age-check-overlay {
+#age-check-overlay {
   font-size: 18px;
   position: fixed;
   z-index: 9999;
   background: rgba(0, 0, 0, 0.95);
-  color: #fff;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,10 +31,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-年齢確認の視認性改善 ============================ */
-#age-check-overlay {
   color: #ffffff;
 }
 
@@ -56,6 +51,16 @@
   color: #000;
   border: none;
   cursor: pointer;
+}
+
+#age-check-overlay h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#age-check-overlay p {
+  max-width: 500px;
+  text-align: center;
 }
 
 #age-check-overlay:not(.active) {

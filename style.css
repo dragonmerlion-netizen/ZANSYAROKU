@@ -36,13 +36,16 @@
 
 #age-check-overlay p {
   color: #ffffff;
+  max-width: 500px;
+  text-align: center;
 }
 
 #age-check-overlay h1 {
   color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-/* ボタンも見やすく */
 #age-check-overlay button {
   margin-top: 20px;
   padding: 12px 24px;
@@ -53,21 +56,9 @@
   cursor: pointer;
 }
 
-#age-check-overlay h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-#age-check-overlay p {
-  max-width: 500px;
-  text-align: center;
-}
-
 #age-check-overlay:not(.active) {
   display: none;
 } 
-
-/*  ============================ */
  
 .button {
   margin-top: 40px;
@@ -120,7 +111,6 @@ footer {
   height: 50px;
   display: block;
 }
-
 
  /* ヘッダー========================================= */
  .nav {
@@ -246,7 +236,12 @@ p {
   line-height: 1.9;
 }
 
-/* 本文写真（ニュース風の灰色ボックス）----------------------- */
+/* 本文内リンク、左寄せ */
+.left{
+text-align:left;
+}
+
+/* 本文写真（ニュース風の灰色ボックス）================================== */
 .news-photo{
   background:#eee;
   border:1px solid #ccc;
@@ -268,11 +263,6 @@ p {
 .news-photo img{
   width:100%;
   height:auto;
-}
-
-/* 本文内リンク、左寄せ */
-.left{
-text-align:left;
 }
 
  /* link========================================= */
@@ -457,20 +447,17 @@ text-align:left;
   box-sizing: border-box;
 }
 
-/* 写真コンテナ */
 .news-photo{
   width:100%;
   max-width:100%;
   overflow:hidden;
 }
 
-/* 写真（縦横どっちも統一） */
 .news-photo.tate,
 .news-photo.yoko{
   width:100%;
 }
 
-/* 画像は確実に収める */
 .news-photo img{
   width:100%;
   max-width:100%;
@@ -478,7 +465,6 @@ text-align:left;
   display:block;
 }
 
-/* ナビちょい詰め */
 header{
   flex-direction: column;
   align-items: flex-start;
@@ -489,7 +475,6 @@ nav a{
   margin-right: 10px;
 }
 
-/* 文字ちょい詰め */
 p{
   font-size:14px;
   line-height:1.6;

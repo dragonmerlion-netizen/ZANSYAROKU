@@ -437,6 +437,8 @@ text-align:left;
 .content-wrapper{
   flex-direction: column;
   gap: 20px;
+  width:100%;
+  overflow-x: hidden;
 }
 
 /* 左メニュー */
@@ -452,21 +454,28 @@ text-align:left;
   width:100%;
   padding: 0 10px;
   order:1;
+  box-sizing: border-box;
 }
 
-/* 写真をスマホ幅に */
-.news-photo.tate{
+/* 写真コンテナ */
+.news-photo{
   width:100%;
+  max-width:100%;
+  overflow:hidden;
 }
 
+/* 写真（縦横どっちも統一） */
+.news-photo.tate,
 .news-photo.yoko{
   width:100%;
 }
 
-/* 画像ははみ出さない */
+/* 画像は確実に収める */
 .news-photo img{
   width:100%;
+  max-width:100%;
   height:auto;
+  display:block;
 }
 
 /* ナビちょい詰め */

@@ -399,3 +399,60 @@ text-align:left;
   color: #333;
  }
 
+/* スマホ対応 ========================================= */
+@media (max-width: 800px){
+
+/* 全体を縦並び */
+.content-wrapper{
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 左メニュー */
+.left-menu{
+  width:100%;
+  margin-top:10px;
+  margin-bottom:20px;
+  order:2;
+}
+
+/* 本文 */
+.main{
+  width:100%;
+  padding: 0 10px;
+  order:1;
+}
+
+/* 写真をスマホ幅に */
+.news-photo.tate{
+  width:100%;
+}
+
+.news-photo.yoko{
+  width:100%;
+}
+
+/* 画像ははみ出さない */
+.news-photo img{
+  width:100%;
+  height:auto;
+}
+
+/* ナビちょい詰め */
+header{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav a{
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* 文字ちょい詰め */
+p{
+  font-size:14px;
+  line-height:1.6;
+}
+
+}

@@ -18,7 +18,7 @@
   display: none;
 }
  
-#age-check-overlay {
+/* #age-check-overlay {
   font-size: 18px;
   position: fixed;
   z-index: 9999;
@@ -33,10 +33,36 @@
   align-items: center;
   justify-content: center;
 }
- 
+
+年齢確認の視認性改善 ============================ */
+#age-check-overlay {
+  color: #ffffff;
+}
+
+#age-check-overlay p {
+  color: #ffffff;
+}
+
+#age-check-overlay h1 {
+  color: #ffffff;
+}
+
+/* ボタンも見やすく */
+#age-check-overlay button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
 #age-check-overlay:not(.active) {
   display: none;
 } 
+
+/*  ============================ */
  
 .button {
   margin-top: 40px;
